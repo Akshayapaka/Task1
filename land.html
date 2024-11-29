@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1500x700/FF5733/FFFFFF?text=Landing+Page+Hero') center center/cover no-repeat;
+            height: 80vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #e04e44;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .features .feature {
+            width: 30%;
+            text-align: center;
+        }
+
+        .features .feature h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .features .feature p {
+            font-size: 1em;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 60px 20px;
+            background-color: #f9fafb;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .testimonials .testimonial {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials .testimonial p {
+            font-style: italic;
+            color: #888;
+        }
+
+        .testimonials .testimonial .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Signup Form */
+        .signup {
+            background-color: #282c34;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .signup h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .signup form {
+            margin-top: 20px;
+        }
+
+        .signup form input {
+            padding: 15px;
+            margin: 10px 5px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .signup form button {
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .signup form button:hover {
+            background-color: #e04e44;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Service</h1>
+        <p>Transform your business with innovative solutions</p>
+        <a href="#signup" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Our platform offers seamless integration with your existing tools.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Enjoy top-notch security and privacy features for peace of mind.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Real-time analytics help you make informed business decisions.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"This service helped us grow our business rapidly. Highly recommend!"</p>
+            <p class="author">John Doe, CEO of TechCorp</p>
+        </div>
+        <div class="testimonial">
+            <p>"The customer support is amazing, and the tools are incredibly useful."</p>
+            <p class="author">Jane Smith, Marketing Director</p>
+        </div>
+        <div class="testimonial">
+            <p>"A game-changer for our team, making our workflow much smoother."</p>
+            <p class="author">Mike Johnson, Product Manager</p>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup">
+        <h2>Sign Up for Early Access</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
